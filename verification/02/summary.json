@@ -1,0 +1,24 @@
+{
+  "seed": 42,
+  "rows": 2103,
+  "first_date": "2018-01-01",
+  "last_date": "2026-07-24",
+  "training_data_len": 1473,
+  "n_test": 630,
+  "rmse_model": 2123.49048952468,
+  "rmse_naive": 1231.0209661283673,
+  "verdict": "KILL",
+  "kill_threshold_rmse_model_x105": 2229.665014000914,
+  "survive_threshold_rmse_naive_x080": 984.8167729026939,
+  "signal_days_long": 544,
+  "signal_cum_return_precost": 0.14076382258261644,
+  "buyhold_cum_return": 0.21983611189601682,
+  "versions": {
+    "python": "3.12.13",
+    "numpy": "2.5.1",
+    "tensorflow": "2.21.0",
+    "yfinance": "1.5.2",
+    "sklearn": "1.9.0",
+    "pandas": "3.0.5"
+  }
+}

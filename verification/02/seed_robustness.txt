@@ -1,0 +1,6 @@
+seed=0 Test Score: 2830.19 RMSE (RMSE_model, price scale)
+seed=0 Naive Score: 1231.02 RMSE (RMSE_naive, price scale)
+seed=0 VERDICT: KILL  (RMSE_naive=1231.0210, RMSE_model=2830.1902, 1.05*RMSE_model=2971.6997, 0.80*RMSE_naive=984.8168)
+seed=7 Test Score: 3373.19 RMSE (RMSE_model, price scale)
+seed=7 Naive Score: 1231.02 RMSE (RMSE_naive, price scale)
+seed=7 VERDICT: KILL  (RMSE_naive=1231.0210, RMSE_model=3373.1930, 1.05*RMSE_model=3541.8526, 0.80*RMSE_naive=984.8168)

@@ -1,8 +1,11 @@
 # Entry 02 — Qiita「機械学習による株価予測」: LSTM 高精度予測の主張
 
-- status: `REGISTERED (result not yet observed)`
+- status: `VERIFIED`
 - registered_at: `2026-07-27T19:41:56Z（git commit timestamp を正とする）`
-- verdict: —
+- verdict: **KILL** — ナイーブ「前日終値コピー」の RMSE 1231 円に対し、再現した LSTM の
+  RMSE は 2123 円（ナイーブが 42% 低い。seed 0/7 でも全て KILL）。「高精度予測」の実体は
+  1 日遅れコピー錯視であり、しかもそのコピーに大差で劣る。詳細は
+  `verification/02/result.md`。
 - predicted P(kill): **0.95**
 - time cap: 2.0 時間
 - cash cost cap: ¥0（無料公開データのみ）
