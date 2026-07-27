@@ -1,0 +1,33 @@
+/home/trow126/falsify-ledger/verification/03/backtest.py:186: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  ovl = pd.concat([vix3m_cboe, vix3m_y], axis=1, keys=["c", "y"]).dropna()
+/home/trow126/falsify-ledger/verification/03/backtest.py:198: Pandas4Warning: Sorting by default when concatenating all DatetimeIndex is deprecated.  In the future, pandas will respect the default of `sort=False`. Specify `sort=True` or `sort=False` to silence this message. If you see this warnings when not directly calling concat, report a bug to pandas.
+  df = pd.concat({"spy": spy, "vix": vix, "vix3m": vix3m, "idx_ret": idx_ret},
+VIX3M CBOE-vs-Yahoo overlap: n=3949 max|diff|=1.0500
+Loaded 208 VX contracts (2007-11-22 .. 2025-07-17)
+ST futures index: N=4444 annualized drift=-41.8%
+
+Backtest rows 2008-01-02 .. 2025-05-30 (signals warm up from 2007-11-02)
+cost= 5bps: N=4404 annRet= 15.83%  vol=16.28%  Sharpe=0.984  maxDD=-30.83%
+cost=15bps: N=4404 annRet= 15.10%  vol=16.29%  Sharpe=0.944  maxDD=-30.85%
+
+Regime mix (target): short=89.4%  cash=6.7%  long=3.9%
+Avg daily one-way turnover (5bps run): 2.50% of NAV; trades on 16.8% of days
+
+--- Secondary observations (not verdict-driving) ---
+2018-02 Volmageddon: episode DD =  -8.13%
+2020-03 Covid: episode DD = -30.83%
+2024-08 yen-carry: episode DD =  -5.08%
+sub-period 2008-2017: N=2518 annRet= 19.08%  vol=13.80%  Sharpe=1.334  maxDD=-19.44%
+sub-period 2018-2025: N=1886 annRet= 11.64%  vol=19.10%  Sharpe=0.671  maxDD=-30.83%
+Equity (SPY) correlation: 0.133
+Intraday VIX high overshoot vs close (short-held days), top 5:
+  2013-10-30: VIX intraday high exceeded close-to-close move by 56.7 VIX-%pts (relative)
+  2016-11-09: VIX intraday high exceeded close-to-close move by 37.9 VIX-%pts (relative)
+  2017-06-29: VIX intraday high exceeded close-to-close move by 37.1 VIX-%pts (relative)
+  2024-12-20: VIX intraday high exceeded close-to-close move by 33.8 VIX-%pts (relative)
+  2022-01-24: VIX intraday high exceeded close-to-close move by 31.3 VIX-%pts (relative)
+
+=== VERDICT INPUTS ===
+Claimed: annRet 16.3%, Sharpe 1.0 (2008-01..2025-05, 5bps)
+Reproduced 5bps Sharpe : 0.984
+Reproduced 15bps Sharpe: 0.944

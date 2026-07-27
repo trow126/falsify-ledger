@@ -1,8 +1,19 @@
 # Entry 03 — Concretum VIX strategy: "16.3% ann., Sharpe 1.0, costs included" (survival check)
 
-- status: `REGISTERED (result not yet observed)`
+- status: `VERIFIED`
 - registered_at: `2026-07-27T19:41:56Z (git commit timestamp is authoritative)`
-- verdict: —
+- verdict: **SURVIVE** — reproduced Sharpe **0.984** (claim: 1.0, within ±0.2) and
+  **0.944** at 15 bps (> 0.7). Annualized 15.83% vs claimed 16.3%; SPY correlation
+  0.133 vs claimed ~15%; regime mix matches. See `verification/03/result.md`.
+- **procedural deviation (disclosed)**: the frozen test said "run the public notebook";
+  the notebook turned out to be a live-execution (IBKR) template containing **no
+  backtest code**. The backtest was rebuilt verbatim from the strategy rules fully
+  disclosed in that same notebook (Cell 3, "Strategy 4"). A strictly literal reading
+  could classify this as `UNVERIFIABLE`; `SURVIVE` was chosen because the substantive
+  frozen test (reproduce full-period Sharpe ±0.2, cost sensitivity at 15 bps) was
+  executed faithfully against the registered source, and the reproduction matched the
+  claim on four independent metrics. This judgment call is recorded here, at the
+  verdict, not hidden.
 - predicted P(kill): **0.30** (i.e., I predict this claim SURVIVES)
 - time cap: 3.0 hours
 - cash cost cap: ¥0 (free public data / free Colab only)

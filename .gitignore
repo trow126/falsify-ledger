@@ -1,0 +1,3 @@
+verification/*/venv/
+verification/*/data/
+__pycache__/
