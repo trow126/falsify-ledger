@@ -1,0 +1,37 @@
+QQQ rows: 6887  span: 1999-03-10 .. 2026-07-27
+
+=== PRIMARY (verdict-driving) — variant A: article rules, dynamic stop, no entry gate ===
+S_g  gross (no costs)                                      Sharpe= 0.749  Ann=  8.87%  MDD=-21.13%  TIM= 15.3%  trades= 434  days=6588
+S_c  5 bps per side on entry and exit                      Sharpe= 0.622  Ann=  7.15%  MDD=-22.38%  TIM= 15.3%  trades= 434  days=6588
+
+S_g = 0.749   S_c = 0.622   ->  VERDICT: KILL
+
+=== Alternative interpretation (documented only, not verdict-driving) ===
+variant B: entry also gated by close > SMA300 (gross)      Sharpe= 0.632  Ann=  5.22%  MDD=-17.99%  TIM= 12.2%  trades= 219  days=6588
+variant B: entry also gated by close > SMA300 (5bps)       Sharpe= 0.539  Ann=  4.35%  MDD=-18.96%  TIM= 12.2%  trades= 219  days=6588
+
+=== SECONDARY 1: +/-20% perturbation of the three constants (gross Sharpe) ===
+band multiplier = 2.0                                      Sharpe= 0.760  Ann=  9.80%  MDD=-26.06%  TIM= 20.2%  trades= 567  days=6588
+band multiplier = 2.5                                      Sharpe= 0.749  Ann=  8.87%  MDD=-21.13%  TIM= 15.3%  trades= 434  days=6588
+band multiplier = 3.0                                      Sharpe= 0.797  Ann=  8.04%  MDD=-17.14%  TIM= 11.4%  trades= 325  days=6588
+IBS threshold   = 0.24                                     Sharpe= 0.709  Ann=  8.14%  MDD=-21.13%  TIM= 14.4%  trades= 404  days=6588
+IBS threshold   = 0.3                                      Sharpe= 0.749  Ann=  8.87%  MDD=-21.13%  TIM= 15.3%  trades= 434  days=6588
+IBS threshold   = 0.36                                     Sharpe= 0.690  Ann=  8.20%  MDD=-24.13%  TIM= 15.9%  trades= 453  days=6588
+SMA length      = 240                                      Sharpe= 0.797  Ann=  9.71%  MDD=-20.46%  TIM= 15.0%  trades= 446  days=6648
+SMA length      = 300                                      Sharpe= 0.749  Ann=  8.87%  MDD=-21.13%  TIM= 15.3%  trades= 434  days=6588
+SMA length      = 360                                      Sharpe= 0.719  Ann=  8.32%  MDD=-20.88%  TIM= 15.7%  trades= 428  days=6528
+
+=== SECONDARY 2: sub-period Sharpe (gross, primary rules) ===
+dot-com   (2000-06-01 .. 2002-12-31)                       Sharpe= 0.596  Ann= 11.04%  MDD=-20.46%  TIM= 14.7%  trades= 434  days=648
+GFC       (2007-10-01 .. 2009-06-30)                       Sharpe= 1.089  Ann= 17.95%  MDD=-11.65%  TIM= 12.7%  trades= 434  days=441
+post-2020 (2020-01-01 .. end)                              Sharpe= 0.549  Ann=  6.61%  MDD=-15.60%  TIM= 15.9%  trades= 434  days=1649
+
+=== SECONDARY 3: exposure / trades (in primary rows above: TIM, trades) ===
+(time-in-market and trade count reported per row)
+
+=== SANITY CHECKS (not verdict-driving) ===
+original rules (no SMA exit), gross, full span:      Sharpe=0.879 Ann=13.83% MDD=-24.56% TIM=19.8% trades=347  (article claims 1.83 on 1993-2024 incl synthetic)
+primary (dyn stop) gross, .. 2024-12-31                    Sharpe= 0.779  Ann=  9.16%  MDD=-21.13%  TIM= 15.2%  trades= 434  days=6197
+primary (dyn stop) 5bps,  .. 2024-12-31                    Sharpe= 0.648  Ann=  7.41%  MDD=-22.38%  TIM= 15.2%  trades= 434  days=6197
+invested-days-only Sharpe convention (gross, primary): 1.924 on 1009 invested days
+invested-days-only Sharpe convention (5bps, primary): 1.765 on 1009 invested days

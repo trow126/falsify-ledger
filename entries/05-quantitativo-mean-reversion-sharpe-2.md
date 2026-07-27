@@ -1,8 +1,14 @@
 # Entry 05 — Quantitativo: "A mean reversion strategy with a 2.11 Sharpe"
 
-- status: `REGISTERED (result not yet observed)`
+- status: `VERIFIED`
 - registered_at: `2026-07-27T20:08:10Z (git commit timestamp is authoritative)`
-- verdict: —
+- verdict: **KILL** — on real QQQ data the faithful reconstruction (MDD and
+  time-in-market match the article) yields gross Sharpe **0.749** and cost-adjusted
+  **0.622** < 1.0. Interpretation-invariant across all documented alternatives
+  (0.54–0.78). Diagnosis (non-verdict): the claimed 2.11 is consistent with an
+  invested-days-only Sharpe convention (reproduced invested-only: 1.92 gross) plus
+  synthetic pre-1999 data — a convention, not a tradable full-series Sharpe. See
+  `verification/05/result.md`.
 - predicted P(kill): **0.70**
 - time cap: 3.0 hours
 - cash cost cap: ¥0 (free public data only)
