@@ -1,8 +1,21 @@
 # Entry 04 — QuantReturns: "Overnight mean-reversion, Sharpe 4.44 on biotech ETFs"
 
-- status: `REGISTERED (result not yet observed)`
+- status: `VERIFIED`
 - registered_at: `2026-07-27T20:08:10Z (git commit timestamp is authoritative)`
-- verdict: —
+- verdict: **SURVIVE** (by literal application of the frozen condition) — reproduced
+  gross Sharpe **4.176** (claim 4.44, within tolerance; daily mean 0.2918% vs claimed
+  ≈0.29%, t = 18.0), and S_c = **2.745** under the frozen "10 bps per round trip per
+  day" flat deduction. See `verification/04/result.md`.
+- **verdict-integrity caveat (disclosed, Brier taken)**: the frozen cost wording
+  implicitly assumed 100% gross exposure; the disclosed strategy runs 200% gross and
+  trades ≈400% notional per day. At a true 5 bps per side **of traded notional** the
+  deduction is 20 bps/day and Sharpe drops to **1.313 → the verdict would flip to
+  KILL**. Per the no-post-hoc-changes rule the literal frozen reading stands, the
+  ambiguity is recorded here at the verdict, and the failed P(kill)=0.85 prediction is
+  scored honestly (Brier +0.7225). Break-even: Sharpe crosses 1.0 at ≈5.5 bps/side of
+  traded notional — inside opening-auction spread territory. Second-half (2016–2025)
+  net Sharpe is 1.57. The registered kill hypothesis is economically vindicated under
+  the per-notional reading even though the registered test survives.
 - predicted P(kill): **0.85**
 - time cap: 3.0 hours
 - cash cost cap: ¥0 (free public data only)

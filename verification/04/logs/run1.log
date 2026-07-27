@@ -1,0 +1,47 @@
+=== Gross (no costs), winsorize 1%/99%, 2007-01-01..2025-09-01 ===
+{
+  "n": 4695,
+  "mean_daily": 0.0029176325582946417,
+  "std_daily": 0.0110908314509864,
+  "sharpe_ann": 4.17606030734129,
+  "tstat": 18.025374217010025
+}
+
+=== Net, flat 10 bps/day (VERDICT-DRIVING S_c) ===
+{
+  "n": 4695,
+  "mean_daily": 0.0019176325582946417,
+  "std_daily": 0.0110908314509864,
+  "sharpe_ann": 2.7447422013416087,
+  "tstat": 11.84729186535644
+}
+
+=== Net, 20 bps/day (per-notional sensitivity) ===
+{
+  "n": 4695,
+  "mean_daily": 0.0009176325582946417,
+  "std_daily": 0.0110908314509864,
+  "sharpe_ann": 1.313424095341928,
+  "tstat": 5.669209513702855
+}
+
+--- Winsorize none: gross Sharpe = 4.262, net10 Sharpe = 2.834
+
+--- Winsorize 5/95: gross Sharpe = 3.877, net10 Sharpe = 2.456
+
+=== Secondary: break-even daily cost ===
+daily cost for net Sharpe=2.0: 15.20 bps/day
+daily cost for net Sharpe=1.0: 22.19 bps/day
+daily cost for net Sharpe=0.0: 29.18 bps/day
+(per-side bps equivalent at gross 200%: divide daily bps by 4)
+
+=== Secondary: sub-periods (gross) ===
+H1 2007-01-03..2016-04-29: Sharpe 6.238  mean 35.8 bps/d
+H2 2016-05-02..2025-08-29: Sharpe 2.814  mean 22.6 bps/d
+H1 net10 Sharpe 4.493 | H2 net10 Sharpe 1.569
+
+First valid overnight-return date per ticker: {'ARKG': '2014-11-03', 'XBI': '2007-01-03', 'IBB': '2007-01-03'}
+Days with 2 assets: 1973, with 3 assets: 2722
+
+=== FROZEN VERDICT ===
+S_g = 4.176   S_c = 2.745   ->  SURVIVE
