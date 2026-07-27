@@ -38,6 +38,8 @@ not a recommendation to buy or sell anything, and not directed at any private in
 | 01 | TradingAgents (arXiv:2412.20138) — "Sharpe 8.21 on AAPL" | 2026-07-27 | **KILL** | 0.90 | B&H baseline is +9.12%, not −5.23% ([result](verification/01/result.md)) |
 | 02 | Qiita LSTM stock prediction (172 LGTM) — high-accuracy claim | 2026-07-27 | **KILL** | 0.95 | Naive lag-1 RMSE beats the LSTM by 42% ([result](verification/02/result.md)) |
 | 03 | Concretum VIX strategy — "16.3% ann., Sharpe 1.0, costs included" | 2026-07-27 | **SURVIVE** | 0.30 | Reproduced Sharpe 0.984; 0.944 at 15 bps ([result](verification/03/result.md)) |
+| 04 | QuantReturns — "Overnight mean-reversion, Sharpe 4.44" | 2026-07-27 | — | 0.85 | — |
+| 05 | Quantitativo — "Mean reversion with a 2.11 Sharpe" | 2026-07-27 | — | 0.70 | — |
 
 Calibration after 3 entries: predictions 0.90 / 0.95 / 0.30 vs outcomes KILL / KILL /
 SURVIVE — mean Brier score **0.034** (0 = perfect, 0.25 = uninformed).
