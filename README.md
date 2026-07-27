@@ -61,10 +61,29 @@ instrument.
 5. Publish the result, the reproduction artifact (script/notebook), and the calibration
    update — regardless of outcome.
 
+## Paid verification (open offer)
+
+The entries above were free public work. The same discipline is available for your own
+decisions, as a paid engagement:
+
+- Scope: one claim about a non-financial software, AI, or data project — a vendor's
+  accuracy number, a build-vs-buy assumption, a performance claim you're about to
+  commit money or engineering time to.
+- What you get: the claim and verdict criteria frozen in writing before results, up to
+  three minimal falsification tests, and a kill / revise / proceed memo within seven
+  days. Reproducible evidence either way.
+- Price: fixed fee, deposit from ¥50,000 (~$350). No success fee — I get paid the same
+  whether your claim survives or dies, so I have no reason to manufacture problems.
+- Not offered: financial product selection, trading advice, strategy parameters.
+  Your data stays private; nothing enters this public ledger without written consent.
+
+To start, [open an issue](https://github.com/trow126/falsify-ledger/issues) titled
+"Kill Sprint request" with one sentence about the claim. First response within 48 hours.
+
 ## Contact
 
-If you own a claim or a purchase/build decision and want it stress-tested under the same
-preregistered discipline before you commit to it: **open an issue on this repository.**
+Questions, or a public claim you'd like to see verified for free in the ledger:
+also via [issues](https://github.com/trow126/falsify-ledger/issues).
 
 ---
 

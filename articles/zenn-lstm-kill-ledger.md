@@ -66,6 +66,7 @@ print(rmse_model, rmse_naive)     # これに勝てないなら予測できて�
 この台帳の 1 件目では、GitHub 94.7k stars の論文 TradingAgents (arXiv:2412.20138) の「AAPL で Sharpe 8.21」という主張を検証しました。論文が −5.23% と報告していた buy&hold は、同じ期間で再計算すると +9.12%。符号から違っていて、これも KILL でした。詳細は [verification/01/](https://github.com/trow126/falsify-ledger/tree/main/verification/01) にあります。
 
 事前登録付きの検証は 1 件あたり数時間、現金コストはゼロです。売り手が自分の主張にこのテストを走らせることは稀で、買い手はテストがこんなに安いことを知らない。その隙間を埋めるのがこの台帳の目的です。検証してほしい公開の主張（論文・記事・バックテスト・導入検討中のツール）があれば [GitHub Issues](https://github.com/trow126/falsify-ledger/issues) へどうぞ。判定条件は、あなたが結果を見る前に commit で固定します。
+なお、公開の台帳とは別に、有償での検証も受けています。対象はあなた自身が判断を控えている非金融の software / AI / data の主張 1 件（導入検討中のツールの精度主張、ベンダーの性能数値など）。判定条件を先に固定し、最大 3 件の反証実験と kill / revise / proceed のメモを 7 日以内に納品します。fixed fee・deposit ¥50,000〜、成果報酬なし。詳細は [リポジトリの README](https://github.com/trow126/falsify-ledger#paid-verification-open-offer) にあります。
 
 ---
 
