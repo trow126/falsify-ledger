@@ -1,8 +1,9 @@
 # Entry 01 — TradingAgents: "Sharpe 8.21 on AAPL"
 
-- status: `REGISTERED (result not yet observed)`
+- status: `VERIFIED`
 - registered_at: `2026-07-27T19:41:56Z (git commit timestamp is authoritative)`
-- verdict: —
+- verdict: **KILL** — recomputed AAPL B&H over the frozen window is **+9.12%**, not the
+  paper's −5.23% (≈14.4 pp error, wrong sign). See `verification/01/result.md`.
 - predicted P(kill): **0.90**
 - time cap: 3.0 hours
 - cash cost cap: ¥0 (free public data only)

@@ -35,7 +35,7 @@ not a recommendation to buy or sell anything, and not directed at any private in
 
 | # | Target | Registered | Verdict | Predicted P(kill) | Result |
 |---|--------|-----------|---------|-------------------|--------|
-| 01 | TradingAgents (arXiv:2412.20138) — "Sharpe 8.21 on AAPL" | 2026-07-27 | — | 0.90 | — |
+| 01 | TradingAgents (arXiv:2412.20138) — "Sharpe 8.21 on AAPL" | 2026-07-27 | **KILL** | 0.90 | B&H baseline is +9.12%, not −5.23% ([result](verification/01/result.md)) |
 | 02 | Qiita LSTM stock prediction (172 LGTM) — high-accuracy claim | 2026-07-27 | — | 0.95 | — |
 | 03 | Concretum VIX strategy — "16.3% ann., Sharpe 1.0, costs included" | 2026-07-27 | — | 0.30 | — |
 
