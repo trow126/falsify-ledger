@@ -4,7 +4,7 @@
 - executor: Claude (falsify-gate verification task)
 - entry: `/home/trow126/falsify-ledger/entries/04-quantreturns-overnight-sharpe-4.md` (frozen, unmodified)
 - article snapshots: `article_mirror.html` / `article_substack.html` (fetched 2026-07-28; text
-  extractions `article_mirror.txt` / `article_substack.txt`)
+  extractions `article_mirror.txt` / `article_substack.txt`; kept locally, not redistributed)
 
 ## 1. Rule extraction (verbatim quotes from the article)
 
@@ -136,8 +136,8 @@ the entry itself was not modified.
 
 ## 7. Files
 
-- `article_mirror.html` / `article_substack.html` — raw snapshots (2026-07-28)
-- `article_mirror.txt` / `article_substack.txt` — text extractions
+- `article_mirror.html` / `article_substack.html` — raw snapshots (2026-07-28) (kept locally, not redistributed)
+- `article_mirror.txt` / `article_substack.txt` — text extractions (kept locally, not redistributed)
 - `reproduce.py` — full reproduction code (yfinance, auto_adjust=True)
 - `logs/run1.log` — execution log of the run reported above
 - `data/prices_adj.pkl` — cached Yahoo price data; `data/strategy_daily_returns.csv` — daily

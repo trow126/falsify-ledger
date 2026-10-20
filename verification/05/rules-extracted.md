@@ -1,7 +1,7 @@
 # Entry 05 — Rules extracted verbatim from the article
 
 Source: https://www.quantitativo.com/p/a-mean-reversion-strategy-with-211
-Snapshot: `article-snapshot.html` / plain text `article-text.txt` (fetched 2026-07-28).
+Snapshot: `article-snapshot.html` / plain text `article-text.txt` (fetched 2026-07-28; kept locally, not redistributed).
 Article date: May 20, 2024.
 
 ## Original rules (frozen quote from article)

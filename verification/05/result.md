@@ -87,7 +87,7 @@ Sanity check — original rules (no SMA exit) on real QQQ: gross Sharpe 0.879,
 
 ## Files
 
-- `article-snapshot.html`, `article-text.txt` — pinned article
+- `article-snapshot.html`, `article-text.txt` — pinned article (kept locally, not redistributed)
 - `rules-extracted.md` — verbatim rules + interpretations
 - `data/qqq_chart.json` — raw Yahoo data (gitignored dir)
 - `reproduce.py` — reproduction code

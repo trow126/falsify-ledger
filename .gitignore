@@ -3,3 +3,6 @@ verification/*/data/
 __pycache__/
 .env
 .env
+# third-party article snapshots: kept locally as evidence, not redistributed
+verification/*/article*.html
+verification/*/article*.txt
